@@ -1,4 +1,4 @@
-// src/components/Input.tsx
+// src/app/dashboard/components/Inputs.tsx
 import { CSSProperties } from 'react';
 import { theme } from '@/styles/theme'; // Asegúrate de importar el tema
 

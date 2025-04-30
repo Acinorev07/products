@@ -1,3 +1,5 @@
+// src/app/dashboard/components/ProductForm.tsx
+
 'use client';
 import { useProductStore } from '@/stores/useProductStore';
 import { Button } from './Button';

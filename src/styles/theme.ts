@@ -1,4 +1,12 @@
+// src/styles/theme.ts
+const breakpoints = {
+  mobile: '480px',
+  tablet: '768px',
+  desktop: '1024px',
+  wide: '1200px'
+};
 export const theme = {
+   
     colors: {
       primary: '#446262',
       secondary: '#A18C34',
@@ -50,10 +58,12 @@ export const theme = {
       large: '1.5rem',    // 24px
       xlarge: '2rem'      // 32px
     },
-    breakpoints: {
-      mobile: '480px',
-      tablet: '768px',
-      desktop: '1024px',
-      wide: '1200px'
-    }
-  };
+    breakpoints,
+    media: {
+      mobile: `(max-width: ${breakpoints.mobile})`,
+      tablet: `(min-width: ${breakpoints.tablet})`,
+      desktop: `(min-width: ${breakpoints.desktop})`
+    },
+  }as const; // ¡Esto es importante!
+
+  export type Theme = typeof theme;

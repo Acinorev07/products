@@ -1,5 +1,8 @@
+//src/app/layout.tsx
+
 import './globals.css';
 import type { Metadata } from 'next';
+import AppThemeProvider from '@/providers/ThemeProvider';
 
 export const metadata: Metadata = {
   title: 'Gestión de Productos',
@@ -13,8 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body>
-        {children}
+        <AppThemeProvider>
+          {children}
+        </AppThemeProvider>
       </body>
     </html>
   );

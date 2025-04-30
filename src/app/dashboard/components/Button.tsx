@@ -1,4 +1,4 @@
-// src/app/dashboard/components/button.tsx
+// src/app/dashboard/components/Button.tsx
 import { useState, CSSProperties  } from 'react';
 import { theme } from '@/styles/theme';
 

@@ -1,3 +1,5 @@
+// src/app/dashboard/components/SearchAndSort.tsx
+
 'use client';
 import { useState } from 'react';
 import { useProductStore } from '@/stores/useProductStore';

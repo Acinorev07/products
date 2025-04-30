@@ -1,3 +1,5 @@
+// src/app/dashboard/components/ProductList.tsx
+
 'use client';
 import { useProductStore } from '@/stores/useProductStore';
 import ProductItem from './ProductItem';
