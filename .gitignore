@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+
+# Entorno de desarrollo
+.next/
+.temp/
+.cache/
+package-lock.json
+
+# Archivos del sistema
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuraciones
+*.local
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
